@@ -1,0 +1,17 @@
+{
+  "name": "liberation-sans-css",
+  "version": "0.1.0",
+  "description": "The Liberation Sans font for the web.",
+  "main": "css/main.css",
+  "repository": "https://github.com/pedzed/liberation-sans-css.git",
+  "author": "pedzed <pedzed@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^3.13.0",
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+      "build-css": "node-sass --include-path scss scss/liberation-sans.scss css/liberation-sans.css",
+      "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  }
+}
